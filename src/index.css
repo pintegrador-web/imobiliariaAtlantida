@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+/* No Tailwind v4, definimos o tema diretamente no CSS */
+@theme {
+  --font-fredoka: "Fredoka One", cursive;
+  --font-nunito: "Nunito", sans-serif;
+}
+
+@layer base {
+  body {
+    /* Agora o Tailwind reconhecerá 'font-nunito' através da variável acima */
+    @apply font-nunito bg-[#f8fbff] text-slate-800;
+  }
+  h1, h2, h3, button {
+    @apply font-fredoka;
+  }
+}
