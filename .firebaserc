@@ -2,6 +2,14 @@
   "projects": {
     "default": "fabricadesilabas"
   },
-  "targets": {},
+  "targets": {
+    "fabricadesilabas": {
+      "hosting": {
+        "atlantida": [
+          "atlantida-imoveis"
+        ]
+      }
+    }
+  },
   "etags": {}
 }
